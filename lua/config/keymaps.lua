@@ -15,4 +15,9 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set("v", ">", ">gv")
 vim.keymap.set("v", "<", "<gv")
 
+-- close current buffer
 vim.keymap.set("n", "<ESC><ESC>", vim.cmd.bd)
+
+-- keep cursor in the middle when searching
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
